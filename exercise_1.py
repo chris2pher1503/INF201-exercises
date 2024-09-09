@@ -38,7 +38,7 @@ with open('/Users/torbjorntorsken/Desktop/INF201/Exercises/csv_files/norway_muni
             district_population[district]=population
             
             
-#the     
+#the task says to sort alphabetically and by population, so I made two sorted lists.    
 sorted_alphabetical = sorted(district_population.items())
 sorted_amount = sorted(district_population.items(), key=lambda x: x[1], reverse=True)
 print("sorting by alphabetical district:")
