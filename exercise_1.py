@@ -38,20 +38,14 @@ with open('/Users/torbjorntorsken/Desktop/INF201/Exercises/csv_files/norway_muni
             district_population[district]=population
             
             
-#the task says to sort alphabetically and by population, so I made two sorted lists.    
+#sorting the dictionary by alphabetical order and printing to screen   
 sorted_alphabetical = sorted(district_population.items())
-sorted_amount = sorted(district_population.items(), key=lambda x: x[1], reverse=True)
 print("sorting by alphabetical district:")
 print(f"{'District':<30} {'Population':<30}")
 print("-"*41)
 for district, population in sorted_alphabetical:
     print(f"{district:<30} {population:<30}")
-print("-"*41)
-print("sorting by population:")
-print(f"{'District':<30} {'Population':<30}")
-print("-"*41)
-for district, population in sorted_amount:
-    print(f"{district:<30} {population:<30}")
+
 
             
 
