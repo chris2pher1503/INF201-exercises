@@ -1,32 +1,5 @@
-{'Sarah': 11, 'Titus': 13, 'Hannah': 16}
-The winner is:  Hannah  with a score of:  16
-A has 761152 votes
-SV has 216082 votes
-RØDT has 135613 votes
-SP has 392193 votes
-KRF has 110083 votes
-MDG has 111033 votes
-V has 129453 votes
-H has 590736 votes
-FRP has 338129 votes
-AAN has 2416 votes
-DEMN has 33326 votes
-FNB has 3354 votes
-HELSE has 6309 votes
-INP has 9763 votes
-KRISTNE has 10179 votes
-LIBS has 4325 votes
-PIR has 2257 votes
-PP has 18713 votes
-PS has 7526 votes
-BLANKE has 17818 votes
-GENE has 171 votes
-KYST has 167 votes
-NKP has 303 votes
-FI has 275 votes
-RN has 96 votes
-GT has 88 votes
-PF has 4908 votes
+{'Sarah': 8, 'Titus': 13, 'Hannah': 18}
+The winner is:  Hannah  with a score of:  18
 party               votes               percentage          
 ============================================================
 A                   761152              26.19              *
@@ -35,33 +8,6 @@ SP                  392193              13.49              *
 ============================================================
 Total number of voters: 2906468
 ============================================================
-A has 761152 votes
-SV has 216082 votes
-RØDT has 135613 votes
-SP has 392193 votes
-KRF has 110083 votes
-MDG has 111033 votes
-V has 129453 votes
-H has 590736 votes
-FRP has 338129 votes
-AAN has 2416 votes
-DEMN has 33326 votes
-FNB has 3354 votes
-HELSE has 6309 votes
-INP has 9763 votes
-KRISTNE has 10179 votes
-LIBS has 4325 votes
-PIR has 2257 votes
-PP has 18713 votes
-PS has 7526 votes
-BLANKE has 17818 votes
-GENE has 171 votes
-KYST has 167 votes
-NKP has 303 votes
-FI has 275 votes
-RN has 96 votes
-GT has 88 votes
-PF has 4908 votes
 party               votes               percentage          
 ============================================================
 A                   761152              26.19              *
@@ -74,33 +20,6 @@ V                   129453              4.45               *
 ============================================================
 Total number of voters: 2906468
 ============================================================
-A has 761152 votes
-SV has 216082 votes
-RØDT has 135613 votes
-SP has 392193 votes
-KRF has 110083 votes
-MDG has 111033 votes
-V has 129453 votes
-H has 590736 votes
-FRP has 338129 votes
-AAN has 2416 votes
-DEMN has 33326 votes
-FNB has 3354 votes
-HELSE has 6309 votes
-INP has 9763 votes
-KRISTNE has 10179 votes
-LIBS has 4325 votes
-PIR has 2257 votes
-PP has 18713 votes
-PS has 7526 votes
-BLANKE has 17818 votes
-GENE has 171 votes
-KYST has 167 votes
-NKP has 303 votes
-FI has 275 votes
-RN has 96 votes
-GT has 88 votes
-PF has 4908 votes
 party               votes               percentage          
 ============================================================
 A                   761152              26.19              *

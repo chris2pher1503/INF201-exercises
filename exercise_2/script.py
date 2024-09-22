@@ -40,8 +40,8 @@ def count_votes(file_name: str, num_parties: int= None):
                 
             else:
                 parties[party_code] = int(number_of_votes)
-        for party in parties:
-            print(f"{party} has {parties[party]} votes")
+        #for party in parties:
+            #print(f"{party} has {parties[party]} votes")
 
 
         
