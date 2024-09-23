@@ -19,19 +19,16 @@ with open("input.txt", "r") as file:
 """
 import re
 
-def process_emails(file_name):
-    with open(file_name, "r") as file:
-        lines = file.readlines()[1:]  
+with open("/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_3/input.txt", "r") as file:
+    lines = file.readlines()[1:]  
         
-        email_pattern = r'([\w.-]+)@([\w-]+)\.([\w.]+)'
-        
-        for line in lines:
-            matches = re.findall(email_pattern, line)
-            for match in matches:
-                name, institution, domain = match
-                print(f"{name} from {institution}.{domain}")
+    email_pattern = r'([\w.-]+)@([\w-]+)\.([\w.]+)'    
+    for line in lines:
+        matches = re.findall(email_pattern, line)
+        for match in matches:
+            name, institution, domain = match
+            print(f"{name} from {institution}.{domain}")
 
-process_emails("input.txt")
 
                 
                 
@@ -105,7 +102,7 @@ print(validate_password('I__'))
 
 
 def validate_password(password: str) -> str:
-    if re.fullmatch(r'[I-Z]\w{2,3}\d', password) and not (password.startswith(" ") or password.endswith(" ")):
+    if re.fullmatch(r'[I-Z]\w{2,3}\d', password) and not re.search(r'^\s|\s$', password):
         return "Valid password: " + password
     else:
         return "Invalid password: " + password
