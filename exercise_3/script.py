@@ -1,3 +1,6 @@
+from pathlib import Path
+import re
+
 #task 0: 
 """
 with open("input.txt", "r") as file: 
@@ -17,7 +20,7 @@ with open("input.txt", "r") as file:
                 domain = splitted[1].split(".")[1]
                 print(f"{name} from {institution}.{domain}") 
 """
-import re
+
 
 with open("/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_3/input.txt", "r") as file:
     lines = file.readlines()[1:]  
@@ -117,7 +120,7 @@ print(validate_password('I__'))
 
 
 #task 3: 
-from pathlib import Path
+
      
 def find_imports_in_file(file_path):
     with open(file_path, "r") as file:
