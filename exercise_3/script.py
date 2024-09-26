@@ -2,25 +2,6 @@ from pathlib import Path
 import re
 
 #task 0: 
-"""
-with open("input.txt", "r") as file: 
-    lines = file.readlines()
-    lines = lines[1:]
-    for line in lines: 
-        
-        words = line.strip().split()
-        for word in words:  
-            splitted = word.split("@")
-            if len(splitted) < 2:
-                #print("Invalid email")
-                continue
-            else: 
-                name = splitted[0]
-                institution = splitted[1].split(".")[0]
-                domain = splitted[1].split(".")[1]
-                print(f"{name} from {institution}.{domain}") 
-"""
-
 
 with open("/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_3/input.txt", "r") as file:
     lines = file.readlines()[1:]  
@@ -40,27 +21,6 @@ with open("/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_3/input.txt"
                 
             
 #task 1: 
-"""
-text = 'Ali and Per are friends.
-Kari and Joe know each other.
-James has known Peter since school days.'
-
-
-print("Friendships:".center(23))
-for line in text.split("\n"):
-    words = line.split()
-    print("-"*23)
-    first_name = words[0]
-    words = words[1:]
-    for word in words: 
-        if word[0].isupper(): 
-            print(f"{first_name:>10} - {word:<10}")
-print("-"*23)
-
-"""
-
-
-
 
 text = """Ali and Per are friends.
 Kari and Joe know each other.
@@ -79,30 +39,6 @@ print("-" * 23)
 
     
 #task 2:
-"""
-def validate_password(password: str) -> bool: 
-    if not re.match(r'[I-Z]', password[0]): 
-        return "Invalid password: "+password
-    if not (4 <= len(password) <= 5):
-        return "Invalid password: "+password
-    if not password[-1].isdigit():
-        return "Invalid password: "+password
-    if not re.search(r'\w', password):
-        return "Invalid password: "+password
-    if password.startswith(" ") or password.endswith(" "):
-        return "Invalid password: "+password
-    return "Valid password: "+password
-
-
-print(validate_password('J1234'))  
-print(validate_password('I_ab5'))  
-print(validate_password('Z9_w4')) 
-print(validate_password('A1234'))
-print(validate_password('J12345')) 
-print(validate_password('I__'))  
-"""
-
-
 
 def validate_password(password: str) -> str:
     if re.fullmatch(r'[I-Z]\w{2,3}\d', password) and not re.search(r'^\s|\s$', password):
@@ -147,3 +83,94 @@ def find_all_imports():
             print(f"{py_file}: {imports}")
 
 find_all_imports()
+
+
+
+#task 0: 
+"""
+with open("input.txt", "r") as file: 
+    lines = file.readlines()
+    lines = lines[1:]
+    for line in lines: 
+        
+        words = line.strip().split()
+        for word in words:  
+            splitted = word.split("@")
+            if len(splitted) < 2:
+                #print("Invalid email")
+                continue
+            else: 
+                name = splitted[0]
+                institution = splitted[1].split(".")[0]
+                domain = splitted[1].split(".")[1]
+                print(f"{name} from {institution}.{domain}") 
+"""
+
+#task 1: 
+"""
+text = 'Ali and Per are friends.
+Kari and Joe know each other.
+James has known Peter since school days.'
+
+
+print("Friendships:".center(23))
+for line in text.split("\n"):
+    words = line.split()
+    print("-"*23)
+    first_name = words[0]
+    words = words[1:]
+    for word in words: 
+        if word[0].isupper(): 
+            print(f"{first_name:>10} - {word:<10}")
+print("-"*23)
+"""
+
+
+#task 2:
+"""
+def validate_password(password: str) -> bool: 
+    if not re.match(r'[I-Z]', password[0]): 
+        return "Invalid password: "+password
+    if not (4 <= len(password) <= 5):
+        return "Invalid password: "+password
+    if not password[-1].isdigit():
+        return "Invalid password: "+password
+    if not re.search(r'\w', password):
+        return "Invalid password: "+password
+    if password.startswith(" ") or password.endswith(" "):
+        return "Invalid password: "+password
+    return "Valid password: "+password
+
+
+print(validate_password('J1234'))  
+print(validate_password('I_ab5'))  
+print(validate_password('Z9_w4')) 
+print(validate_password('A1234'))
+print(validate_password('J12345')) 
+print(validate_password('I__'))  
+"""
+
+
+#task 2:
+"""
+def validate_password(password: str) -> bool: 
+    if not re.match(r'[I-Z]', password[0]): 
+        return "Invalid password: "+password
+    if not (4 <= len(password) <= 5):
+        return "Invalid password: "+password
+    if not password[-1].isdigit():
+        return "Invalid password: "+password
+    if not re.search(r'\w', password):
+        return "Invalid password: "+password
+    if password.startswith(" ") or password.endswith(" "):
+        return "Invalid password: "+password
+    return "Valid password: "+password
+
+
+print(validate_password('J1234'))  
+print(validate_password('I_ab5'))  
+print(validate_password('Z9_w4')) 
+print(validate_password('A1234'))
+print(validate_password('J12345')) 
+print(validate_password('I__'))  
+"""
