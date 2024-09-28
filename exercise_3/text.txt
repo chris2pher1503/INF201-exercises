@@ -1,0 +1,18 @@
+jonas.kusch from nmbu.no
+lena.scholzer from nmbu.no.
+jonas.kusch from gmail.domain
+lena-scholzer from nmbu.domain.
+      Friendships      
+-----------------------
+       Ali - Per       
+      Kari - Joe       
+     James - Peter     
+-----------------------
+Valid password: J1234
+Valid password: I_ab5
+Valid password: Z9_w4
+Invalid password: A1234
+Invalid password: J12345
+Invalid password: I__
+script.py: ['re', 'Path']
+dummy.py: ['re', 'Path']
