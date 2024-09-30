@@ -4,12 +4,13 @@ nmbu_email="sebastian.sverkmo@nmbu.no"
 name= "Christopher Ljosland Strand"
 nmbu_email="christopher.ljosland.strand@nmbu.no"
 
-#task 0:
 from pathlib import Path
 #cwd is INF201, defined here to make it easier
 cwd = Path.cwd()
 exercise_4_path = cwd / "Exercises" / "exercise_4"
 
+
+#task 0:
 
 def create_dir():
     sub_dirs = ["data", "output"]
