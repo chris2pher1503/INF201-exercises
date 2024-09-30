@@ -1,0 +1,33 @@
+task 0 output: 
+------------------------------------------------------------
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects_task0/output
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects_task0/data
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects_task0/output/output.txt
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects_task0/data/data.txt
+task 1 output: 
+------------------------------------------------------------
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/3b
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/4b
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/1
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/3a
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/4a
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/2
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/3b/Ole
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/3b/Sarah
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/4b/Ole
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/4b/Sarah
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/1/Ole
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/1/Sarah
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/3a/Ole
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/3a/Sarah
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/4a/Ole
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/4a/Sarah
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/2/Ole
+/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_4/projects/2/Sarah
+task 2 output: 
+------------------------------------------------------------
+[935, 1485, 2035, 2585, 3135, 3685, 4235, 4785, 5335, 5885]
+[ 935 1485 2035 2585 3135 3685 4235 4785 5335 5885]
+Time taken for non-numpy: 0.000015
+Time taken for numpy: 0.000373
+25.26 times faster with non numpy

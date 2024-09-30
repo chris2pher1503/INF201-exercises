@@ -96,6 +96,8 @@ matrix = [[11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
 vector = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
+print("task 2 output: ")
+print("-"*60)
 starttime_non_numpy = time.time()
 print(matrix_vector_product(matrix, vector))
 endtime_non_numpy = time.time()
