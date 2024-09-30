@@ -12,8 +12,8 @@ cwd = Path.cwd()
 exercise_4_path = cwd / "Exercises" / "exercise_4"
 
 
-#task 0:
 
+#task 0:
 def create_dir():
     sub_dirs = ["data", "output"]
     projects_task0_path = exercise_4_path / "projects_task0"
@@ -34,10 +34,11 @@ def create_dir():
         
 
 create_dir()
+
+
+
+
 #task 1:
-
-
-
 def create_exercises(total_number=4, project_assigments_start=3):
     exercises = [str(i) if i < project_assigments_start else str(i) + letter for i in range(1, total_number + 1) for letter in (["a", "b"])]
     
@@ -65,8 +66,8 @@ def generate_files(exercises):
 generate_files(create_exercises())
 
 
-#task 2: 
 
+#task 2: 
 def matrix_vector_product(matrix, vector):
     result = [0] * len(matrix) 
     for i in range(len(matrix)):
