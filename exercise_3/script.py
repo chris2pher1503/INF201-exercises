@@ -12,11 +12,6 @@ with open("/Users/torbjorntorsken/Desktop/INF201/Exercises/exercise_3/input.txt"
             print(f"{name} from {institution}.{domain}")
 
 
-                
-                
-                
-                
-                
             
 #task 1: 
 text = """Ali and Per are friends.
