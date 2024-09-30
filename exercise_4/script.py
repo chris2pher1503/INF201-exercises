@@ -22,7 +22,11 @@ def create_dir():
             file_path = sub_dir_path / (sub_dir + ".txt")
             print(file_path)
             file_path.touch()    
-             
+    
+    print("task 0 output: ")
+    print("-"*60)
+    for path in Path.glob(projects_task0_path, "**/*"):
+        print(path)
                 
         
 
@@ -50,5 +54,9 @@ def generate_files(exercises):
             student_path = exercise_path / student
             student_path.mkdir(exist_ok=True)
 
+    print("task 1 output: ")
+    print("-"*60)
+    for path in Path.glob(projects_path, "**/*"):
+        print(path)
 
 generate_files(create_exercises())
