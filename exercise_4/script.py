@@ -40,7 +40,7 @@ create_dir()
 
 #task 1:
 def create_exercises(total_number=4, project_assigments_start=3):
-    exercises = [str(i) if i < project_assigments_start else str(i) + letter for i in range(1, total_number + 1) for letter in (["a", "b"])]
+    exercises = [str(i) if i < project_assigments_start else str(i) + letter for i in range(1, total_number + 1) for letter in ["a", "b"]]
     
     return exercises
 
@@ -82,18 +82,9 @@ def numpy_matrix_vector_product(matrix, vector):
     return result
 
 
-matrix = [[11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
- [21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
- [31, 32, 33, 34, 35, 36, 37, 38, 39, 40],
- [41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
- [51, 52, 53, 54, 55, 56, 57, 58, 59, 60],
- [61, 62, 63, 64, 65, 66, 67, 68, 69, 70],
- [71, 72, 73, 74, 75, 76, 77, 78, 79, 80],
- [81, 82, 83, 84, 85, 86, 87, 88, 89, 90],
- [91, 92, 93, 94, 95, 96, 97, 98, 99, 100],
- [101, 102, 103, 104, 105, 106, 107, 108, 109, 110]]
+matrix = np.random.rand(5000, 5000)
 
-vector = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+vector = np.random.rand(5000)
 
 
 print("task 2 output: ")
@@ -109,5 +100,5 @@ difference_numpy = endtime_numpy - starttime_numpy
 
 print(f"Time taken for non-numpy: {difference_non_numpy:.6f}")
 print(f"Time taken for numpy: {difference_numpy:.6f}")
-print(f"{difference_numpy/difference_non_numpy:.2f} times faster with non numpy")
+print(f"{difference_non_numpy/difference_numpy:.2f} times faster with numpy")
         
