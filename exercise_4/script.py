@@ -44,8 +44,8 @@ def create_exercises(total_number=4, project_assigments_start=3):
     
     return exercises
 
-def generate_files(exercises):
-    students = ["Ole", "Sarah"]
+def generate_files(exercises, students):
+    
 
     projects_path  = exercise_4_path / "projects"
     projects_path.mkdir(exist_ok=True)
@@ -63,7 +63,8 @@ def generate_files(exercises):
     for path in Path.glob(projects_path, "**/*"):
         print(path)
 
-generate_files(create_exercises())
+students = ["Ole", "Sarah"]
+generate_files(create_exercises(), students)
 
 
 
