@@ -42,6 +42,7 @@ create_dir()
 def create_exercises(total_number=4, project_assigments_start=3):
     exercises = [str(i) if i < project_assigments_start else str(i) + letter for i in range(1, total_number + 1) for letter in ["a", "b"]]
     
+    
     return exercises
 
 def generate_files(exercises, students):
