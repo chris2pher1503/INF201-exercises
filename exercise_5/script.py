@@ -28,44 +28,12 @@ def variance(matrix, mean):
 def multiply(matrix, scalar):
     return matrix * scalar
 
-print("sum of the matrix: ", sum(matrix))
-print("mean of the matrix: ", mean(matrix, sum(matrix)))
-print("variance of the matrix: ",variance(matrix, mean(matrix, sum(matrix))))
+sum = sum(matrix)
+mean = mean(matrix, sum)
+variance = variance(matrix, mean)
+print("sum of the matrix: ", sum)
+print("mean of the matrix: ", mean)
+print("variance of the matrix: ",variance)
 print("multiplied of the matrix: ",multiply(matrix, 4))
-
-
-
-
-
-
-""" def mean(matrix):
-    sum = 0
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])): 
-            sum += int(matrix[i][j])
-    mean_value = sum / (len(matrix) * len(matrix[0]))
-                       
-    return mean_value
-
-def variance(matrix, mean):
-    sum= 0
-    for i in range (len(matrix)):
-        for j in range(len(matrix[i])):
-            sum += (mean - matrix[i][j]) ** 2
-    return sum / (len(matrix) * len(matrix[0]))**2 """
-
-
-
-""" def multiplt(matrix, scalar):
-    return matrix * scalar
-
-
-print(mean(matrix))
-print(variance(matrix))
-print(sum(matrix))
-print(multiplt(matrix, 4))
-
- """
  
- #task 2: 
- 
+#task 2: 
