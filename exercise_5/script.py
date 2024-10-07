@@ -15,7 +15,7 @@ def mean(matrix, sum):
     return mean
 
 def variance(matrix, mean, sum):
-    variance = sum / (len(matrix) * len(matrix[0]))**2
+    variance = sum / (len(matrix))**2
     return variance
 
 def multiply(matrix, scalar):
