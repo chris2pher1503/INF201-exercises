@@ -2,6 +2,26 @@ import numpy as np
 import random
 import time
 
+#task 0:
+def inplace_add_vectors(vec1, vec2):
+    for i in range(len(vec1)):
+        vec1[i] += vec2[i]
+    return vec1
+
+def add_vectors(vec1, vec2):
+    result = []
+    for i in range(len(vec1)):
+        result.append(vec1[i] + vec2[i])
+    return result
+
+v1 = [1, 2, 3]
+v3 = v1.copy()
+v2 = [4, 5, 6]
+
+print(inplace_add_vectors(v3, v2))
+print(inplace_add_vectors(v1, v2))
+
+
 #task 1: 
 matrix = np.random.randint(0, 100, (5000, 5000))
 
@@ -36,6 +56,7 @@ print("mean of the matrix: ", mean)
 print("variance of the matrix: ",variance)
 print("multiplied of the matrix: ",multiply(matrix, 4))
  
+
 #task 2:
 A = np.zeros((50 , 50))
 print("A: ", A) 
@@ -57,7 +78,6 @@ def dominant_eigenvalue(A, v):
     v_new = np.matmul(A, v)
     v = v_new / np.linalg.norm(v_new)
     return v
-
     
 for i in range(100):
     v = dominant_eigenvalue(A, v)
@@ -65,8 +85,6 @@ dominant_eigenvalue = (A @ v) @ v / (v @ v)
 print("dominant eigenvalue: ", dominant_eigenvalue)
 
 eigenvalues, eigenvectors = np.linalg.eig(A)
-
-
 abs_eigenvalues = np.abs(eigenvalues)
 dominant_index = np.argmax(abs_eigenvalues)
 
