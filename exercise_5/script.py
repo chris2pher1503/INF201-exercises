@@ -37,3 +37,17 @@ print("variance of the matrix: ",variance)
 print("multiplied of the matrix: ",multiply(matrix, 4))
  
 #task 2: 
+A = np.zeros((50 , 50))
+print("A: ", A) 
+A[0][1] = 1
+A[0][0] = -2
+for i in range(1, len(A)):
+    for j in range(1, len(A[i])):
+        if i == j:
+            A[i][j] = -2
+            if j < len(A[i]) - 1:
+                A[i][j+1] = 1
+            if j < len(A[i]) - 1:
+                A[i][j-1] = 1
+A[49][48] = 1                
+print("A: \n", A)
