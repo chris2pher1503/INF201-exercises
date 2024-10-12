@@ -23,7 +23,7 @@ print(inplace_add_vectors(v1, v2))
 
 
 #task 1: 
-matrix = np.random.randint(0, 100, (5000, 5000))
+matrix = np.random.randint(0, 101, (5000, 5000))
 
 def sum(matrix):
     sum = 0
@@ -69,6 +69,7 @@ for i in range( len(A)):
         A[i, i-1] = 1
     
 print("A: \n", A)
+print("A shape: ", A.shape)
 
 
 v = np.random.rand(50)
