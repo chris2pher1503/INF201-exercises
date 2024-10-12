@@ -65,7 +65,7 @@ print("multiplied of the matrix: ",multiply(matrix, 4))
 
 #task 2:
 A = np.zeros((50 , 50))
-print("A: ", A) 
+""" print("A: ", A)  """
 
 for i in range( len(A)):
     A[i,i] = -2
@@ -75,7 +75,7 @@ for i in range( len(A)):
         A[i, i-1] = 1
     
 print("A: \n", A)
-print("A shape: ", A.shape)
+""" print("A shape: ", A.shape) """
 
 
 v = np.random.rand(50)
