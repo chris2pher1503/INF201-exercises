@@ -1,3 +1,9 @@
+name="Sebatian Sverksmo"
+nmbu_email="sebastian.sverkmo@nmbu.no"
+
+name= "Christopher Ljosland Strand"
+nmbu_email="christopher.ljosland.strand@nmbu.no"
+
 import numpy as np
 import random
 import time
