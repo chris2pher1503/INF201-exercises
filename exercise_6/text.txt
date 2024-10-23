@@ -1,0 +1,8 @@
+The dog barks.
+The cat meows.
+Grade assigned to Christopher for A: INF201
+Grade assigned to Sebastian for F: INF201
+Christopher:  {'A': 'INF201'}
+Sebastian:  {'F': 'INF201'}
+Name: Christopher Age: 20 Email: christopher.ljosland.strand@nmbu.no
+Name: Sebastian Age: 25 Email: sebastian.sverkmo@nmbu.no

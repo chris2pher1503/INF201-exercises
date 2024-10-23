@@ -75,7 +75,7 @@ class Teacher(Person):
         self._subject = subject
     
     def assign_grade(self, student, grade, course): 
-        student.assign_grade(grade, course)
+        student.assign_grade(course, grade)
         print(f"Grade assigned to {student._name} for {course}: {grade}")
         
         
